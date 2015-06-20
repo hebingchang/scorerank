@@ -32,7 +32,7 @@ header("Content-type:text/html;charset=gb2312");
 	<?php
 		$score = $_GET['score'];
 		$subject=$_GET['subject'];
-	?>
+	?> 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -46,26 +46,26 @@ header("Content-type:text/html;charset=gb2312");
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">成绩输入</a></li>
+            <li><a href="#">Details</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
+<form action="result.php" method="get"/>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
 		    <li><a href="index.php">成绩输入</a></li>
-            <li class="active"><a href="#">查询结果 <span class="sr-only">(current)</span></a></li>
 			<li><a href=<?php
-				echo '"details.php?score=' . $score . '&subject=' . $subject . '"';
-			?>>详细信息</a></li>
-            
+				echo '"result.php?score=' . $score . '&subject=' . $subject . '"';
+			?>>查询结果</a></li>
+            <li class="active"><a href="#">详细信息 <span class="sr-only">(current)</span></a></li>
+            <!---->
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h2 class="sub-header">Result</h2>
+          <h2 class="sub-header">Score Details</h2>
           <!--<div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -192,19 +192,10 @@ header("Content-type:text/html;charset=gb2312");
                 </tr>
               </tbody>
             </table>-->
-			<div class="alert alert-warning" role="alert">
-			  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-			  <span class="sr-only">Hint:</span>
-			  排名仅供参考, <a href=<?php
-				echo '"details.php?score=' . $score . '&subject=' . $subject . '"';
-			?>>查看详细分析</a>
-			</div>
-
           </div>
         </div>
       </div>
     </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
