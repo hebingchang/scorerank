@@ -39,7 +39,7 @@ header("Content-type:text/html;charset=gb2312");
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Physics/Chemical Grouped Ranking</a>
+          <a class="navbar-brand" href="#">Grouped Ranking</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -73,7 +73,7 @@ header("Content-type:text/html;charset=gb2312");
 			<option>化学</option>
 			</select>
 			<br />
-			<button type="submit" class="btn btn-default">查询</button>
+			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;查询</button>
           </div>
         </div>
       </div>

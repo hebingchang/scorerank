@@ -42,11 +42,15 @@ header("Content-type:text/html;charset=gb2312");
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Physics/Chemical Grouped Ranking</a>
+          <a class="navbar-brand" href="#">Grouped Ranking</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">成绩输入</a></li>
+            <li><a href="index.php">成绩输入</a></li>
+			<li><a href="#">查询结果</a></li>
+			<li><a href=<?php
+				echo '"details.php?score=' . $score . '&subject=' . $subject . '"';
+			?>>详细信息</a></li>
           </ul>
         </div>
       </div>

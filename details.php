@@ -42,11 +42,15 @@ header("Content-type:text/html;charset=gb2312");
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Physics/Chemical Grouped Ranking</a>
+          <a class="navbar-brand" href="#">Grouped Ranking</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Details</a></li>
+			<li><a href="index.php">成绩输入</a></li>
+			<li><a href=<?php
+				echo '"result.php?score=' . $score . '&subject=' . $subject . '"';
+			?>>查询结果</a></li>
+            <li><a href="#">详细信息</a></li>
           </ul>
         </div>
       </div>
@@ -66,6 +70,11 @@ header("Content-type:text/html;charset=gb2312");
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h2 class="sub-header">Score Details</h2>
+		  <div class="alert alert-info" role="alert">
+			  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+			  <span class="sr-only">Hint:</span>
+			  你的成绩将以蓝色高亮显示，若有多人并列则将全部高亮。
+			</div>
 		  <h3 class="sub-header"><?php echo $subject; ?></h3>
 
           <div class="table-responsive">
