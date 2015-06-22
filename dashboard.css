@@ -1,5 +1,23 @@
 body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
 
+  table thead{display: block;}
+  table tbody{display: block; height: 400px; overflow: auto;}
+  table thead tr th:nth-child(1){width: 60px;}
+  table thead tr th:nth-child(2){width: 60px;}
+  table thead tr th:nth-child(3){width: 140px;}
+  table thead tr th:nth-child(4){width: 140px;}
+  table thead tr th:nth-child(5){width: 140px;}
+  table thead tr th:nth-child(6){width: 140px;}
+  table thead tr th:nth-child(7){width: 140px;}
+
+  table tbody tr td:nth-child(1){width: 60px;}
+  table tbody tr td:nth-child(2){width: 60px;}
+  table tbody tr td:nth-child(3){width: 140px;}
+  table tbody tr td:nth-child(4){width: 140px;}
+  table tbody tr td:nth-child(5){width: 140px;}
+  table tbody tr td:nth-child(6){width: 140px;}
+  table tbody tr td:nth-child(7){width: 140px;}
+  
 /*
  * Base structure
  */

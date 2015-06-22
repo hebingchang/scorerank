@@ -51,6 +51,7 @@ header("Content-type:text/html;charset=gb2312");
 				echo '"result.php?score=' . $score . '&subject=' . $subject . '"';
 			?>>查询结果</a></li>
             <li><a href="#">详细信息</a></li>
+			<li><a href="about.php">关于</a></li>
           </ul>
         </div>
       </div>
@@ -65,6 +66,7 @@ header("Content-type:text/html;charset=gb2312");
 				echo '"result.php?score=' . $score . '&subject=' . $subject . '"';
 			?>>查询结果</a></li>
             <li class="active"><a href="#">详细信息 <span class="sr-only">(current)</span></a></li>
+			<li><a href="about.php">关于</a></li>
             <!---->
           </ul>
         </div>
@@ -78,30 +80,269 @@ header("Content-type:text/html;charset=gb2312");
 		  <h3 class="sub-header"><?php echo $subject; ?></h3>
 
           <div class="table-responsive">
+
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>排名</th>
-                  <th>分数</th>
-                  <th>班级</th>
+				  <th>排名</th>
+				  <th>班级</th>
+				  <th>语文</th>
+				  <th>数学</th>
+                  <th>英语</th>
+				  <th><?php echo $subject; ?></th>
+                  <th>总分</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
                 </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
                 </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
                 </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr class="info">
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr><tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr><tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr><tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr><tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				<tr>
+                  <td><b><i>1</i></b></td>
+                  <td>12</td>
+                  <td>100</td>
+				  <td>150</td>
+				  <td>100</td>
+				  <td>100</td>
+				  <td>450</td>
+                </tr>
+				
               </tbody>
             </table>
           </div>

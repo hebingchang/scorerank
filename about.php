@@ -29,7 +29,10 @@ header("Content-type:text/html;charset=gb2312");
   </head>
 
   <body>
-
+	<?php
+		$score = $_GET['score'];
+		$subject=$_GET['subject'];
+	?> 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -43,8 +46,8 @@ header("Content-type:text/html;charset=gb2312");
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">成绩输入</a></li>
-			<li><a href="about.php">关于</a></li>
+			<li><a href="index.php">成绩输入</a></li>
+			<li><a href="#">关于</a></li>
           </ul>
         </div>
       </div>
@@ -54,33 +57,28 @@ header("Content-type:text/html;charset=gb2312");
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">成绩输入 <span class="sr-only">(current)</span></a></li>
-			<li><a href="about.php">关于</a></li>
-            <!--<li><a href="#">Reports</a></li>-->
+		    <li><a href="index.php">成绩输入</a></li>
+			<li class="active"><a href="#">关于 <span class="sr-only">(current)</span></a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h2 class="sub-header">Score Inputting</h2>
+          <h2 class="sub-header"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;About</h2>
 
-			<div class="alert alert-warning" role="alert">
-			  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-			  <span class="sr-only">Hint:</span>
-			  请输入你 语数外政+物 或 语数外政+化 的四门总分，并选择你的加一科目，而后点击查询。
-			</div>
-			<input type="text" id="score" name="score" class="form-control" style="width:200px" placeholder="在这里输入你的总分" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
-			<br />
-			<p>加一科目:</p>
-			<select class="form-control" style="width:140px" id="subject" name="subject">
-			<option>物理</option>
-			<option>化学</option>
-			</select>
-			<br />
-			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;查询</button>
+          <div class="table-responsive">
+			  <h4><b>About this system</b></h4>
+			  <br />
+			  <p>Developed by @Boar based on Bootstrap.</p>
+			  <p>Data from <a href="http://116.236.231.249" target="_blank">Online Marking System(OMS)</a>.</p>
+			  <p>Source code can be downloaded on <a href="https://github.com/hebingchang/scorerank/" target="_blank">Github</a>, but it is under the protection of GNU GPL.</p>
+			  <p><b>Thank for using!</b></p>
+			  <br />
+			  <h4><b>Contact me</b></h4>
+			  <p><a href='tencent://message/?uin=934632437&Site=192.168.0.100&Menu=yes'>QQ</a>: 934632437</p>
+			  <p><a href='mailto:hebingchang1@live.com'>Email</a>: hebingchang1@live.com</p>
           </div>
         </div>
       </div>
     </div>
-</form>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

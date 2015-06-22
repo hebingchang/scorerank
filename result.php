@@ -51,6 +51,7 @@ header("Content-type:text/html;charset=gb2312");
 			<li><a href=<?php
 				echo '"details.php?score=' . $score . '&subject=' . $subject . '"';
 			?>>详细信息</a></li>
+			<li><a href="about.php">关于</a></li>
           </ul>
         </div>
       </div>
@@ -65,7 +66,7 @@ header("Content-type:text/html;charset=gb2312");
 			<li><a href=<?php
 				echo '"details.php?score=' . $score . '&subject=' . $subject . '"';
 			?>>详细信息</a></li>
-            
+            <li><a href="about.php">关于</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
